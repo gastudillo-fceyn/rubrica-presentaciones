@@ -10,10 +10,171 @@
     :root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2932;background:#f3f7f7;line-height:1.55;--main:#146b66;--main-dark:#10514d;--line:#d6e2e1;--muted:#52626c;--focus:#f0a332}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}button,textarea{font:inherit}a{color:var(--main-dark)}
     .wrap{max-width:920px;margin:auto;padding:0 20px}.hero{background:linear-gradient(125deg,#104f4b,#1a736c);color:#fff;padding:54px 0 45px}.eyebrow{letter-spacing:.10em;text-transform:uppercase;font-size:.78rem;font-weight:700;color:#d6f0e9;margin:0 0 10px}.hero h1{font-size:clamp(2rem,5vw,3.15rem);letter-spacing:-.035em;line-height:1.16;margin:0 0 16px;max-width:760px}.hero p{font-size:1.08rem;max-width:740px;margin:0;color:#e8f5f2}.intro{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 27px;margin:28px 0}.intro h2,.end h2{margin:0 0 9px;font-size:1.3rem}.intro p{margin:0 0 10px}.intro p:last-child{margin-bottom:0}.pill{display:inline-block;background:#e6f6ed;color:#155c42;border-radius:50px;padding:5px 12px;font-weight:700;font-size:.85rem;margin:0 0 14px}.progress-panel{display:flex;justify-content:space-between;gap:16px;align-items:center;margin:30px 0 10px}.progress-panel h2{font-size:1.25rem;margin:0}.counter{font-weight:650;color:var(--muted);font-variant-numeric:tabular-nums}.track{height:10px;background:#d8e6e3;border-radius:10px;overflow:hidden;margin-bottom:25px}.fill{background:var(--main);height:100%;width:0;transition:width .2s}.criterion{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 26px;margin-bottom:19px;box-shadow:0 3px 12px #25483d08}.criterion h3{margin:0 0 6px;font-size:1.17rem}.hint{color:var(--muted);margin:0 0 17px;font-size:.95rem}.options{display:grid;gap:9px}.option{border:1px solid #dce6e5;border-radius:12px;display:flex;gap:13px;align-items:flex-start;padding:11px 13px;cursor:pointer;transition:background .12s,border-color .12s}.option:hover{border-color:#78b1aa;background:#f3faf8}.option:has(input:checked){background:#e5f4f0;border:2px solid var(--main);padding:10px 12px}.option input{accent-color:var(--main);margin:5px 0 0;width:18px;height:18px;flex:none}.option strong{display:block;font-size:.94rem}.option span{display:block;color:#43545e;font-size:.91rem}.note{display:block;font-weight:650;margin:18px 0 7px}.note-field{width:100%;min-height:75px;padding:12px 13px;border:1px solid #aebfbd;border-radius:10px;background:#fff;resize:vertical}.note-field::placeholder,.answer::placeholder{color:#687a83}.end{background:#fff;border:1px solid var(--line);padding:26px;border-radius:18px;margin:30px 0 20px}.end p{color:var(--muted);margin:0 0 19px}.question{margin:0 0 18px}.question label{font-weight:650;display:block;margin:0 0 7px}.answer{display:block;width:100%;min-height:92px;padding:12px 13px;border:1px solid #aebfbd;border-radius:10px;resize:vertical}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.btn{border:0;border-radius:11px;padding:12px 19px;cursor:pointer;font-weight:700}.btn.primary{background:var(--main);color:#fff}.btn.primary:hover{background:var(--main-dark)}.btn.secondary{background:#e6efee;color:#194c49}.btn.secondary:hover{background:#d8e6e4}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.status{min-height:26px;color:var(--main-dark);font-weight:650}.fine{color:var(--muted);font-size:.87rem}.footer{padding:15px 0 42px;color:#52626c;font-size:.89rem}.footer p{margin:5px 0}@media(max-width:600px){.hero{padding:38px 0}.wrap{padding:0 14px}.intro,.criterion,.end{padding:19px 17px;border-radius:14px}.progress-panel{align-items:flex-start;flex-direction:column;gap:3px}.buttons{flex-direction:column}.btn{width:100%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
+    
+    /* ===== IDENTIDAD INSTITUCIONAL FCEyN - UNLPam ===== */
+
+    :root {
+      --main: #159B49;
+      --main-dark: #087638;
+      --line: #d9e6dc;
+      --muted: #526057;
+      --focus: #F58220;
+    }
+
+    /* Encabezado */
+    .hero {
+      background: linear-gradient(125deg, #087638, #159B49);
+    }
+
+    .eyebrow {
+      color: #fff3e5;
+    }
+
+    .hero p {
+      color: #ffffff;
+    }
+
+    /* Etiqueta de la actividad */
+    .pill {
+      background: #fff0df;
+      color: #a64a00;
+    }
+
+    /* Opciones de la rúbrica */
+    .option:hover {
+      border-color: #159B49;
+      background: #f3faf5;
+    }
+
+    .option:has(input:checked) {
+      background: #e8f7ed;
+      border-color: #159B49;
+    }
+
+    /* Botón principal */
+    .btn.primary {
+      background: #159B49;
+    }
+
+    .btn.primary:hover {
+      background: #087638;
+    }
+
+    /* Botón secundario */
+    .btn.secondary {
+      background: #fff0df;
+      color: #994500;
+    }
+
+    .btn.secondary:hover {
+      background: #ffdfba;
+    }
+
+    /* Barra de progreso */
+    .fill {
+      background: #F58220;
+    }
+    
+    /* ===== ENCABEZADO INSTITUCIONAL ===== */
+
+    .institutional-header {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 36px;
+    }
+
+    .institutional-logo {
+      width: 72px;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .institutional-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.4;
+    }
+
+    .institutional-name strong {
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+
+    .institutional-name span {
+      font-size: 0.92rem;
+      color: #e9f5eb;
+    }
+
+    @media (max-width: 600px) {
+      .institutional-header {
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+
+      .institutional-logo {
+        width: 54px;
+      }
+
+      .institutional-name strong {
+        font-size: 0.92rem;
+      }
+
+      .institutional-name span {
+        font-size: 0.82rem;
+      }
+    }
+    
+    /* ===== PIE INSTITUCIONAL Y LICENCIA ===== */
+
+    .footer {
+      margin-top: 45px;
+      padding-top: 25px;
+      padding-bottom: 40px;
+      border-top: 3px solid #F58220;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 7px 0;
+    }
+
+    .footer span {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .footer .license {
+      margin-top: 18px;
+      font-size: 0.85rem;
+    }
+
+    .footer .license a {
+      color: #087638;
+      font-weight: 700;
+    }
+
   </style>
 </head>
 <body>
-<header class="hero"><div class="wrap">
+
+<header class="hero">
+  <div class="wrap">
+
+    <div class="institutional-header">
+      <img
+        src="logo-fceyn.png"
+        alt="Logo de la Facultad de Ciencias Exactas y Naturales"
+        class="institutional-logo"
+      >
+
+      <div class="institutional-name">
+        <strong>Facultad de Ciencias Exactas y Naturales</strong>
+        <span>Universidad Nacional de La Pampa - UNLPam</span>
+      </div>
+    </div>
+
   <p class="eyebrow">Actividad de reflexión · Diseño de presentaciones</p>
   <h1>¿Cómo estoy diseñando mi presentación?</h1>
   <p>Una autoevaluación para revisar las decisiones de diseño antes de tu exposición oral.</p>
@@ -46,7 +207,35 @@
     <p class="fine">Privacidad: las respuestas permanecen en esta página mientras la tenés abierta; no se guardan ni se comparten automáticamente. Si cerrás o recargás la página sin copiarlas, se perderán.</p>
   </form>
 </main>
-<footer class="footer wrap"><p><strong>Cómo presentar la información</strong> · Actividad de reflexión previa a la exposición oral</p><p>Basada en las recomendaciones sobre propósito, síntesis, legibilidad, imágenes, contraste y animaciones.</p></footer>
+
+<footer class="footer wrap">
+
+  <p>
+    <strong>¿Cómo estoy diseñando mi presentación?</strong>
+    <span>Actividad de reflexión y autoevaluación</span>
+  </p>
+
+  <p>
+    Facultad de Ciencias Exactas y Naturales - UNLPam
+  </p>
+
+  <p>
+    Diseño y elaboración:
+    <strong>Mg. Prof. Gustavo Astudillo</strong>
+  </p>
+
+  <p class="license">
+    <a
+      href="https://creativecommons.org/licenses/by/4.0/deed.es"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      CC BY 4.0
+    </a>
+    · Licencia Creative Commons Atribución 4.0 Internacional
+  </p>
+
+</footer>
 <script>
 'use strict';
 const levels = ['Logrado plenamente','Logrado','En proceso','Necesita revisión'];
@@ -116,10 +305,32 @@ el('copy').addEventListener('click',async()=>{
   try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(value);success=true;}else{success=fallbackCopy(value);}}catch{success=fallbackCopy(value);}
   el('status').textContent=success?'¡Autoevaluación copiada! Podés pegarla en un documento o mensaje.':'Tu navegador no permitió copiar automáticamente. Probá abrir la página con HTTPS (GitHub Pages) o usá otro navegador.';
 });
-el('reset').addEventListener('click',()=>{
-  if(!confirm('¿Querés borrar todas tus respuestas? Esta acción no se puede deshacer.'))return;
-  el('self-assessment').reset();document.querySelectorAll('textarea').forEach(t=>t.value='');updateProgress();el('status').textContent='Se borraron las respuestas de esta página.';window.scrollTo({top:0,behavior:'smooth'});
+
+
+el('reset').addEventListener('click', () => {
+  if (!confirm(
+    '¿Querés borrar todas tus respuestas? Esta acción no se puede deshacer.'
+  )) return;
+
+  // Restablecer el formulario
+  const form = el('self-assessment');
+  HTMLFormElement.prototype.reset.call(form);
+
+  // Actualizar la barra de progreso
+  updateProgress();
+
+  // Informar al estudiante
+  el('status').textContent =
+    'Se borraron todas las respuestas del formulario.';
+  
+  // Volver al comienzo de la autoevaluación
+  el('evaluacion').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
 });
+
+
 </script>
 </body>
 </html>
